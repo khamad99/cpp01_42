@@ -6,7 +6,7 @@
 /*   By: kalshaer <kalshaer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 11:38:56 by kalshaer          #+#    #+#             */
-/*   Updated: 2023/08/14 12:17:21 by kalshaer         ###   ########.fr       */
+/*   Updated: 2023/08/18 11:22:09 by kalshaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ void Sed::replace()
 {
     size_t position = 0;
 
-    this->_ifs.open(this->_filename);
+    this->_ifs.open(this->_filename.c_str());
     if (!this->_ifs.is_open())
     {
         std::cout << "Error: could not open file" << std::endl;
         return ;
     }
-    this->_ofs.open(this->_filename + ".replace");
+    this->_ofs.open((this->_filename + ".replace").c_str());
     if (!this->_ofs.is_open())
     {
         std::cout << "Error: could not open file" << std::endl;

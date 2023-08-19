@@ -6,7 +6,7 @@
 /*   By: kalshaer <kalshaer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 12:27:49 by kalshaer          #+#    #+#             */
-/*   Updated: 2023/08/14 13:37:53 by kalshaer         ###   ########.fr       */
+/*   Updated: 2023/08/19 11:10:46 by kalshaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ class Harl
 };
 
 typedef void (Harl::* HarlFunc)(void);
+
+//using HarlFunc = void (Harl::* )(void);
 
 #endif

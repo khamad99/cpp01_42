@@ -6,7 +6,7 @@
 /*   By: kalshaer <kalshaer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 12:27:38 by kalshaer          #+#    #+#             */
-/*   Updated: 2023/08/14 13:58:25 by kalshaer         ###   ########.fr       */
+/*   Updated: 2023/08/19 11:14:25 by kalshaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int main()
             std::cout << std::endl;
             return (0);
         }
+        if (level.empty())
+            continue;
         if (level == "debug" || level == "info" || level == "warning" || level == "error")
             break;
         std::cout << "Invalid level." << std::endl;
