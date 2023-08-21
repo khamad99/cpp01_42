@@ -6,7 +6,7 @@
 /*   By: kalshaer <kalshaer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 11:03:59 by kalshaer          #+#    #+#             */
-/*   Updated: 2023/08/18 10:57:06 by kalshaer         ###   ########.fr       */
+/*   Updated: 2023/08/21 11:11:54 by kalshaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 HumanB::HumanB(std::string name) : _name(name)
 {
+    this->_weapon = NULL;
 }
 
 HumanB::~HumanB()
